@@ -61,6 +61,16 @@ app.get("/", (req, res) => {
     .catch(err => res.json(err));
 });
 
+app.get("/messages", (req, res) => {
+  Message.find()
+    .then(messages => {
+      console.log("*****************All messages: ", messages);
+      console.log(messages.length);
+      res.render("messages", { messages: messages })
+    })
+    .catch(err => res.json(err));
+});
+
 app.post("/post_msg", (req, res) => {
   const message = new Message();
   console.log("****************" + req.body.message + req.body.author)

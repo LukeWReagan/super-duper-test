@@ -5,3 +5,28 @@ body {
 h1 {
   color:cornsilk;
 }
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2px;
+  margin-left: 38px;
+}
+#message {
+  height: 8vw;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+#nav {
+  background-color: white;
+  height: 30px;
+  width: 30%;
+  margin: 0 auto;
+}
+a {
+  color: cadetblue
+}
